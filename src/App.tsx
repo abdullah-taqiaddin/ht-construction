@@ -1,10 +1,5 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
+import "./App.css";
 import Homepage from "./Pages/Homepage/Homepage";
-
 
 function App() {
   return (

@@ -2,7 +2,7 @@
 import "./HomePage.css"; // Create a CSS file for HomePage layout
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
-import { Button, border } from "@chakra-ui/react";
+import { Button } from "@chakra-ui/react";
 import { ReactComponent as BtnIcon } from "../../Assets/icons/buttonIcon.svg";
 
 import HouseIcon from "../../Assets/icons/home-icn.svg";
@@ -45,7 +45,7 @@ const ServiceRow = ({
           height: "100%",
         }}
       >
-        <img src={icn} style={{ width: "24px", height: "24px" }} />
+        <img src={icn} style={{ width: "24px", height: "24px" }} alt="image" />
       </div>
       <div
         style={{

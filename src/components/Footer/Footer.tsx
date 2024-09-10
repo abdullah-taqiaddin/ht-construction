@@ -81,7 +81,7 @@ const Footer = () => {
           <ul style={{ listStyleType: "none", padding: "0", margin: "0" }}>
             <li>
               <a
-                href="#"
+                href="https://happy-sky-0f5904b1e.5.azurestaticapps.net"
                 style={{
                   color: "#ffffff",
                   textDecoration: "none",
@@ -95,7 +95,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="https://happy-sky-0f5904b1e.5.azurestaticapps.net"
                 style={{
                   color: "#ffffff",
                   textDecoration: "none",
@@ -109,7 +109,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="https://happy-sky-0f5904b1e.5.azurestaticapps.net"
                 style={{
                   color: "#ffffff",
                   textDecoration: "none",
@@ -123,7 +123,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="https://happy-sky-0f5904b1e.5.azurestaticapps.net"
                 style={{
                   color: "#ffffff",
                   textDecoration: "none",
@@ -147,7 +147,7 @@ const Footer = () => {
           <ul style={{ listStyleType: "none", padding: "0", margin: "0" }}>
             <li>
               <a
-                href="#"
+                href="https://happy-sky-0f5904b1e.5.azurestaticapps.net"
                 style={{
                   color: "#ffffff",
                   textDecoration: "none",
@@ -161,7 +161,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="https://happy-sky-0f5904b1e.5.azurestaticapps.net"
                 style={{
                   color: "#ffffff",
                   textDecoration: "none",
@@ -175,7 +175,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="https://happy-sky-0f5904b1e.5.azurestaticapps.net"
                 style={{
                   color: "#ffffff",
                   textDecoration: "none",
@@ -189,7 +189,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="https://happy-sky-0f5904b1e.5.azurestaticapps.net"
                 style={{
                   color: "#ffffff",
                   textDecoration: "none",

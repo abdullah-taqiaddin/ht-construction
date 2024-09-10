@@ -33,16 +33,24 @@ const Header = () => {
               <nav>
                 <ul className="drawer-nav">
                   <li>
-                    <a href="#">Home</a>
+                    <a href="https://happy-sky-0f5904b1e.5.azurestaticapps.net">
+                      Home
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Services</a>
+                    <a href="https://happy-sky-0f5904b1e.5.azurestaticapps.net">
+                      Services
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Gallery</a>
+                    <a href="https://happy-sky-0f5904b1e.5.azurestaticapps.net">
+                      Gallery
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Contact Us</a>
+                    <a href="https://happy-sky-0f5904b1e.5.azurestaticapps.net">
+                      Contact Us
+                    </a>
                   </li>
                 </ul>
               </nav>
@@ -57,16 +65,25 @@ const Header = () => {
         <nav className="nav-links">
           <ul>
             <li>
-              <a href="#">Home</a>
+              <a href="https://happy-sky-0f5904b1e.5.azurestaticapps.net">
+                Home
+              </a>
             </li>
             <li>
-              <a href="#">Services</a> <span>↓</span>
+              <a href="https://happy-sky-0f5904b1e.5.azurestaticapps.net">
+                Services
+              </a>{" "}
+              <span>↓</span>
             </li>
             <li>
-              <a href="#">Gallery</a>
+              <a href="https://happy-sky-0f5904b1e.5.azurestaticapps.net">
+                Gallery
+              </a>
             </li>
             <li>
-              <a href="#">Contact Us</a>
+              <a href="https://happy-sky-0f5904b1e.5.azurestaticapps.net">
+                Contact Us
+              </a>
             </li>
           </ul>
         </nav>
