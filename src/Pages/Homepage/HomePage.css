@@ -1,0 +1,38 @@
+.hero-section {
+    /* background-image: url('/path-to-hero-image'); */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 150px 0;
+    color: #333;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+}
+
+.services-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.services-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    margin: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 250px;
+}
+
+.contact-section {
+    background-color: #f1f1f1;
+    padding: 100px 20px;
+    text-align: center;
+}
