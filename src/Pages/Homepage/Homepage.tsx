@@ -45,7 +45,11 @@ const ServiceRow = ({
           height: "100%",
         }}
       >
-        <img src={icn} style={{ width: "24px", height: "24px" }} alt="image" />
+        <img
+          src={icn}
+          style={{ width: "24px", height: "24px" }}
+          alt="service icon image"
+        />
       </div>
       <div
         style={{
