@@ -38,12 +38,11 @@ const Footer = () => {
             color: "#fff",
             border: "unset",
             borderRadius: "1.8rem",
-            padding: "1.7rem",
-            paddingRight: "0.5rem",
+            padding: "1.7rem 0.5rem 1.7rem 1.7rem",
           }}
           rightIcon={<BtnIcon />}
         >
-          Schedule a Consultation{" "}
+          Schedule a Consultation
         </Button>
       </div>
       <div
