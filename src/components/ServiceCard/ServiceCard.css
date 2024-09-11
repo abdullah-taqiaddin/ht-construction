@@ -1,0 +1,69 @@
+.service-row {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 80px;
+    justify-content: space-between;
+    border: 1px solid #191f2833;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+}
+
+.service-icon {
+    background: #191f28;
+    border-radius: 100%;
+    padding: 1rem;
+    height: 100%;
+}
+
+.service-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.service-title {
+    font-size: 48px;
+    font-weight: 500;
+    max-width: 460px;
+    min-width: 460px;
+    text-align: left;
+    line-height: 52.8px;
+}
+
+.service-description {
+    font-size: 22px;
+    font-weight: 400;
+    max-width: 500px;
+    text-align: left;
+}
+
+.service-btn-icon {
+    /* You can add any specific styles for the BtnIcon here if needed */
+}
+
+@media screen and (max-width: 1295px) {
+    .service-row {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .service-icon {
+        background: #191f28;
+        border-radius: 100%;
+        padding: 1rem;
+        height: 100%;
+        width: fit-content;
+    }
+
+    .service-btn-icon {
+        /* You can add any specific styles for the BtnIcon here if needed */
+        align-self: end;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .service-title {
+        min-width: unset;
+        max-width: unset;
+    }
+}

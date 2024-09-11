@@ -1,15 +1,106 @@
 .hero-section {
     /* background-image: url('/path-to-hero-image'); */
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    padding: 150px 0;
-    color: #333;
-}
+    display: flex;
+        align-items: center;
+        padding: 80px 0;
+        background-color: #F6F7F9;
+        gap: 40px;
+    }
+    
+    .hero-text {
+        text-align: left;
+        width: 50%;
+    }
+    
+    .hero-title {
+        font-size: 120px;
+        font-weight: bold;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+    
+    .hero-title-highlight {
+        color: #c4a24d;
+    }
+    
+    .hero-description {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 28.6px;
+        margin-bottom: 2rem;
+    }
+    
+    .hero-button {
+        background-color: #c4a24d;
+        color: #fff;
+        border: none;
+        border-radius: 1.8rem;
+        padding: 1.7rem 0.5rem 1.7rem 1.7rem;
+    }
+    
+    .hero-image {
+        position: relative;
+        width: 60%;
+        border-radius: 20px;
+        overflow: hidden;
+        margin-top: -80px;
+        margin-right: -80px;
+    }
+    
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        display: block;
+    }
+    
+    .gradient-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+    }
+    
+    .text-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        color: #fff;
+        z-index: 2;
+    }
+    
+    .text-overlay-content {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .text-overlay-title {
+        margin-bottom: 10px;
+        text-align: left;
+        font-weight: 500;
+        font-size: 35px;
+    }
+        .text-overlay-description {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            gap: 40px;
+            text-align: left;
+        }
+    
+        .text-overlay-description div {
+            max-width: 400px;
+            font-size: 15px;
+            font-weight: 400;
+            color: rgba(246, 247, 249, 1);
+            line-height: 24px;
+        }
 
-.hero-section h1 {
-    font-size: 3rem;
-}
 
 .services-section {
     padding: 50px 0;
@@ -36,8 +127,58 @@
     padding: 100px 20px;
     text-align: center;
 }
+.projects-section {
+    margin: -80px;
+    margin-Bottom: 0px;
+    margin-Top: 0px;
+    padding: 100px 80px;
+    background-Color: #191F28;
+    color: #FFF;
+    position: relative;
+
+}
+
+.project-section-sub {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-left {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.project-subtitle {
+    color: #c4a24d;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.project-title {
+    font-size: 86px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.project-right {
+    text-align: left;
+    width: 20%;
+}
+
+.project-description {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #dedede;
+}
 .swiper-scrollbar {
-    background-color: rgba(246, 247, 249, 0.1);
+    background-color: rgba(196, 162, 77, 0.3);
     /* Light background */
     border-radius: 10px;
     height: 4px;
@@ -49,4 +190,66 @@
     border-radius: 10px;
     height: 100%;
     cursor: pointer;
+}
+@media screen and (max-width: 950px) {
+    .project-section-sub {
+        flex-direction: column;
+    }
+
+    .project-left {
+        width: 100%;
+    }
+
+    .project-title {
+        width: 100%;
+    }
+
+    .project-right {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1215px) {
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-image {
+        margin-top: unset;
+        margin-right: unset;
+        width: 100%;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-title {
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .hero-title {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .hero-image {
+        margin-top: unset;
+        margin-right: unset;
+        width: 100%;
+    }
+
+    .text-overlay-description {
+        display: none;
+    }
 }

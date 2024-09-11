@@ -87,7 +87,7 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-
+        <div className="hidden-div"></div>
         {/* Hamburger icon will only show on small screens */}
         <div className="hamburger" onClick={onOpen}>
           <HamburgerIcon />

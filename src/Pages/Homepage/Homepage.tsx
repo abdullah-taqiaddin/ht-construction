@@ -31,71 +31,7 @@ import BathIcon from "../../Assets/icons/sinks-icn.svg";
 import dreamhouseimg from "../../Assets/images/Dreamhome.png";
 import { useRef, useState } from "react";
 import type { Swiper as SwiperType } from "swiper";
-
-const ServiceRow = ({
-  title,
-  description,
-  icn,
-}: {
-  title: string;
-  description: string;
-  icn: string;
-}) => {
-  return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "row",
-        padding: "50px 80px 50px 80px",
-        justifyContent: "space-between",
-        border: "1px solid #191F2833",
-        borderLeft: "0px",
-        borderRight: "0px",
-        borderTop: "0px",
-      }}
-    >
-      <div
-        style={{
-          background: "#191F28",
-          borderRadius: "100%",
-          padding: "1rem",
-          height: "100%",
-        }}
-      >
-        <img
-          src={icn}
-          style={{ width: "24px", height: "24px" }}
-          alt="Service Icon"
-        />
-      </div>
-      <div
-        style={{
-          fontSize: "48px",
-          fontWeight: "500",
-          maxWidth: "460px",
-          minWidth: "460px",
-          textAlign: "left",
-          lineHeight: "52.8px",
-        }}
-      >
-        {title}
-      </div>
-      <div
-        style={{
-          fontSize: "22px",
-          fontWeight: "400",
-          maxWidth: "500px",
-          textAlign: "left",
-        }}
-      >
-        {description}
-      </div>
-      <div>
-        <BtnIcon />
-      </div>
-    </div>
-  );
-};
+import ServiceRow from "../../components/ServiceCard/ServiceCard";
 
 const Homepage = () => {
   const swiperRef = useRef<SwiperType | null>(null);
@@ -115,41 +51,14 @@ const Homepage = () => {
         }}
       >
         {/* Hero Section */}
-        <section
-          style={{
-            display: "flex",
-            alignItems: "center",
-            padding: "80px 0",
-            backgroundColor: "#F6F7F9",
-            gap: "40px",
-          }}
-        >
+        <section className="hero-section">
           {/* Left Text Section */}
-          <div
-            style={{
-              textAlign: "left",
-              width: "50%",
-            }}
-          >
-            <h1
-              style={{
-                fontSize: "120px",
-                fontWeight: "bold",
-                lineHeight: "1.2",
-                marginBottom: "20px",
-              }}
-            >
+          <div className="hero-text">
+            <h1 className="hero-title">
               Ready to Redefine Your{" "}
-              <span style={{ color: "#c4a24d" }}>Home?</span>
+              <span className="hero-title-highlight">Home?</span>
             </h1>
-            <p
-              style={{
-                fontWeight: "400",
-                fontSize: "22px",
-                lineHeight: "28.6px",
-                marginBottom: "2rem",
-              }}
-            >
+            <p className="hero-description">
               HT Construction, your premier home transformation experts in
               Canada. Elevate your lifestyle with our cutting-edge designs and
               innovative solutions. Whether you're looking to modernize your
@@ -170,102 +79,20 @@ const Homepage = () => {
             </Button>
           </div>
 
-          {/* Right Image Section with Gradient Overlay */}
-          <div
-            style={{
-              position: "relative",
-              width: "60%",
-              borderRadius: "20px",
-              overflow: "hidden",
-              marginTop: "-80px",
-              marginRight: "-80px",
-            }}
-          >
-            <img
-              src={fireplaceImage}
-              alt="Fireplace Services"
-              style={{
-                width: "100%",
-                height: "auto",
-                borderRadius: "20px",
-                display: "block",
-              }}
-            />
-
-            {/* Gradient overlay */}
-            <div
-              style={{
-                position: "absolute",
-                top: "0",
-                left: "0",
-                width: "100%",
-                height: "100%",
-                background:
-                  "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%)",
-              }}
-            ></div>
-
-            {/* Text over the gradient */}
-            <div
-              style={{
-                position: "absolute",
-                bottom: "0",
-                left: "0",
-                width: "100%",
-                padding: "20px",
-                color: "#fff",
-                zIndex: "2",
-              }}
-            >
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  padding: "20px",
-                }}
-              >
-                <div
-                  style={{
-                    marginBottom: "10px",
-                    textAlign: "left",
-                    fontWeight: "500",
-                    fontSize: "35px",
-                  }}
-                >
-                  FirePlace Services
-                </div>
-                <div
-                  style={{
-                    display: "flex",
-                    flexDirection: "row",
-                    justifyContent: "space-evenly",
-                    gap: "40px",
-                    textAlign: "left",
-                  }}
-                >
-                  <div
-                    style={{
-                      maxWidth: "400px",
-                      fontSize: "15px",
-                      fontWeight: "400",
-                      color: "rgba(246, 247, 249, 1)",
-                      lineHeight: "24px",
-                    }}
-                  >
+          <div className="hero-image">
+            <img src={fireplaceImage} alt="Fireplace Services" />
+            <div className="gradient-overlay"></div>
+            <div className="text-overlay">
+              <div className="text-overlay-content">
+                <div className="text-overlay-title">FirePlace Services</div>
+                <div className="text-overlay-description">
+                  <div>
                     Our expert team is dedicated to creating inviting, cozy
                     spaces that center around the heart of your home - the
                     fireplace.
                   </div>
 
-                  <div
-                    style={{
-                      maxWidth: "400px",
-                      fontSize: "15px",
-                      fontWeight: "400",
-                      color: "rgba(246, 247, 249, 1)",
-                      lineHeight: "24px",
-                    }}
-                  >
+                  <div>
                     Whether you’re dreaming of a traditional hearth or a sleek
                     modern design, we specialize in crafting bespoke fireplace
                     solutions.
@@ -275,73 +102,22 @@ const Homepage = () => {
             </div>
           </div>
         </section>
-
         {/* Our Projects Section with Swiper */}
-        <section
-          style={{
-            margin: "-80px",
-            marginBottom: "0px",
-            marginTop: "0px",
-            padding: "100px 80px",
-            backgroundColor: "#191F28",
-            color: "#FFF",
-            position: "relative",
-          }}
-        >
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-            }}
-          >
+        <section className="projects-section">
+          <div className="project-section-sub">
             {/* Left Section: Subtitle and Title */}
-            <div
-              style={{
-                width: "70%",
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "flex-start",
-                textAlign: "left",
-                gap: "1rem",
-                marginBottom: "2rem",
-              }}
-            >
-              {/* Subtitle and Title */}
-              <div
-                style={{
-                  color: "#c4a24d",
-                  fontSize: "22px",
-                  fontWeight: "bold",
-                }}
-              >
-                ● Our Projects
-              </div>
-              <div
-                style={{
-                  fontSize: "86px",
-                  fontWeight: "400",
-                  lineHeight: "1.2",
-                  textAlign: "left",
-                }}
-              >
+            <div className="project-left">
+              <div className="project-subtitle">● Our Projects</div>
+              <div className="project-title">
                 Your Vision, Our Expertise:
                 <br />
                 Home Renovation Masterpieces.
               </div>
-
-              {/* Swiper Carousel */}
             </div>
 
             {/* Right Section: Description */}
-            <div style={{ textAlign: "left", width: "20%" }}>
-              <div
-                style={{
-                  fontSize: "18px",
-                  lineHeight: "1.8",
-                  color: "#DEDEDE",
-                }}
-              >
+            <div className="project-right">
+              <div className="project-description">
                 Step into a world of exceptional craftsmanship and
                 transformative design with HT Construction, your premier partner
                 for comprehensive home renovations in Canada. Our expertise
@@ -350,6 +126,7 @@ const Homepage = () => {
               </div>
             </div>
           </div>
+
           <div>
             <Swiper
               onSwiper={(swiper: SwiperCore) => {
@@ -363,6 +140,18 @@ const Homepage = () => {
               spaceBetween={20}
               slidesPerView={3}
               breakpoints={{
+                200: {
+                  slidesPerView: 1,
+                },
+                300: {
+                  slidesPerView: 1,
+                },
+                400: {
+                  slidesPerView: 1,
+                },
+                500: {
+                  slidesPerView: 1,
+                },
                 640: {
                   slidesPerView: 1,
                 },
@@ -459,7 +248,6 @@ const Homepage = () => {
             </Swiper>
           </div>
         </section>
-
         {/* Remaining Service Rows */}
         <section
           style={{
@@ -512,7 +300,6 @@ const Homepage = () => {
           />
           {/* Add more ServiceRows as needed */}
         </section>
-
         {/* Footer */}
         <section
           style={{
