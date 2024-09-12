@@ -29,7 +29,7 @@ import DecksIcon from "../../Assets/icons/decks-icn.svg";
 import BathIcon from "../../Assets/icons/sinks-icn.svg";
 
 import dreamhouseimg from "../../Assets/images/Dreamhome.png";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import type { Swiper as SwiperType } from "swiper";
 import ServiceRow from "../../components/ServiceCard/ServiceCard";
 
