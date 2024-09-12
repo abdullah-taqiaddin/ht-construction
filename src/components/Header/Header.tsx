@@ -11,7 +11,7 @@ import {
 import Icn from "../../Assets/icons/MainLogo 1.svg";
 import "./Header.css";
 import { HamburgerIcon } from "@chakra-ui/icons";
-
+import { Link } from "react-router-dom";
 const Header = () => {
   const { isOpen, onOpen, onClose } = useDisclosure(); // Chakra UI Drawer control
   const [isDropdownOpen, setDropdownOpen] = useState(false); // Dropdown state for services
@@ -86,19 +86,21 @@ const Header = () => {
         </Drawer>
 
         <div className="logo">
-          <img src={Icn} alt="HT Construction" />
+          <Link to="/" style={{ color: "#333", textDecoration: "none" }}>
+            <img src={Icn} alt="HT Construction 2" />
+          </Link>
         </div>
 
         {/* Nav Links */}
         <nav className="nav-links">
           <ul>
             <li>
-              <a href="https://happy-sky-0f5904b1e.5.azurestaticapps.net">
+              <Link to="/" style={{ color: "#333", textDecoration: "none" }}>
                 Home
-              </a>
+              </Link>
             </li>
             <li onClick={toggleDropdown} style={{ position: "relative" }}>
-              <a href="#">Services</a> <span>↓</span>
+              <div>Services ↓</div>
               {isDropdownOpen && (
                 <div
                   ref={dropdownRef} // Attach ref to dropdown
@@ -128,12 +130,12 @@ const Header = () => {
                         borderBottom: "1px solid grey",
                       }}
                     >
-                      <a
-                        href="https://happy-sky-0f5904b1e.5.azurestaticapps.net"
+                      <Link
+                        to="/houserenovation"
                         style={{ color: "#333", textDecoration: "none" }}
                       >
                         Full House Renovation
-                      </a>
+                      </Link>
                     </div>
                     <div
                       style={{

@@ -35,8 +35,7 @@ import ServiceRow from "../../components/ServiceCard/ServiceCard";
 
 const Homepage = () => {
   const swiperRef = useRef<SwiperType | null>(null);
-  const [isBeginning, setIsBeginning] = useState(true);
-  const [isEnd, setIsEnd] = useState(false);
+
 
   return (
     <div className="homepage">
@@ -132,10 +131,6 @@ const Homepage = () => {
               onSwiper={(swiper: SwiperCore) => {
                 swiperRef.current = swiper;
               }}
-              onSlideChange={(swiper: SwiperCore) => {
-                setIsBeginning(swiper.isBeginning);
-                setIsEnd(swiper.isEnd);
-              }}
               modules={[Navigation, Scrollbar]} // Include Scrollbar module
               spaceBetween={20}
               slidesPerView={3}
@@ -170,10 +165,10 @@ const Homepage = () => {
             >
               {/* Swiper Slides */}
               <SwiperSlide style={{ minWidth: "1000px" }}>
-                <img src={carouselImage1} />
+                <img src={carouselImage1} alt="my carounsle" />
               </SwiperSlide>
               <SwiperSlide style={{ minWidth: "1000px" }}>
-                <img src={carouselImage2} />
+                <img src={carouselImage2} alt="my carounsle 2" />
               </SwiperSlide>
 
               <div
