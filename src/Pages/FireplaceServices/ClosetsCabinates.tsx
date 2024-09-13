@@ -42,12 +42,12 @@ const FireplaceServices = () => {
             <img
               src={H1image}
               className="img-65"
-              alt="Fireplace Service - Hero Image 1"
+              alt="Fireplace Service -   1"
             />
             <img
               src={H2image}
               className="img-35"
-              alt="Fireplace Service - Hero Image 2"
+              alt="Fireplace Service -   2"
             />
           </div>
         </div>
@@ -76,12 +76,12 @@ const FireplaceServices = () => {
             <img
               src={H3image}
               className="img-35"
-              alt="Fireplace Service - Hero Image 3"
+              alt="Fireplace Service -   3"
             />
             <img
               src={H4image}
               className="img-65"
-              alt="Fireplace Service - Hero Image 4"
+              alt="Fireplace Service -   4"
             />
           </div>
         </div>
@@ -98,7 +98,7 @@ const FireplaceServices = () => {
             <img
               src={H5image}
               className="images-full"
-              alt="Fireplace Service - Hero Image 5"
+              alt="Fireplace Service -   5"
             />
           </div>
         </div>

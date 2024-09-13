@@ -1,0 +1,46 @@
+/* GalleryPage.css */
+.gallery-container {
+    background: rgba(246, 247, 249, 1);
+}
+
+.gallery-header {
+    font-size: 95px;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.gallery-highlight {
+    color: rgba(199, 149, 26, 1);
+}
+
+.gallery-buttons-container {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 200px 3rem;
+    justify-content: space-around;
+}
+
+.gallery-button {
+    background: white !important;
+    border-radius: 88px !important;
+    padding: 27px !important;
+}
+
+
+@media screen and (max-width: 1400px) {
+    .gallery-header {
+        padding: 1rem;
+        font-size: 60px;
+    }
+
+    .gallery-buttons-container {
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: space-evenly
+    }
+}

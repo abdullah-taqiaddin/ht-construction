@@ -46,12 +46,12 @@ const ClosetsCabinates = () => {
             <img
               src={H1image}
               className="img-65"
-              alt="Cabinets and Closets - Hero Image 1"
+              alt="Cabinets and Closets -   1"
             />
             <img
               src={H2image}
               className="img-35"
-              alt="Cabinets and Closets - Hero Image 2"
+              alt="Cabinets and Closets -   2"
             />
           </div>
         </div>
@@ -86,12 +86,12 @@ const ClosetsCabinates = () => {
             <img
               src={H3image}
               className="img-35"
-              alt="Cabinets and Closets - Hero Image 3"
+              alt="Cabinets and Closets -   3"
             />
             <img
               src={H4image}
               className="img-65"
-              alt="Cabinets and Closets - Hero Image 4"
+              alt="Cabinets and Closets -   4"
             />
           </div>
         </div>
@@ -113,7 +113,7 @@ const ClosetsCabinates = () => {
             <img
               src={H5image}
               className="images-full"
-              alt="Cabinets and Closets - Hero Image 5"
+              alt="Cabinets and Closets -   5"
             />
           </div>
         </div>

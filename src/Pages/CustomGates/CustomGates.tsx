@@ -31,16 +31,8 @@ const CustomGates = () => {
             </div>
           </div>
           <div className="images-row">
-            <img
-              src={H1image}
-              className="img-65"
-              alt="Custom Gates - Hero Image 1"
-            />
-            <img
-              src={H2image}
-              className="img-35"
-              alt="Custom Gates - Hero Image 2"
-            />
+            <img src={H1image} className="img-65" alt="Custom Gates -   1" />
+            <img src={H2image} className="img-35" alt="Custom Gates -   2" />
           </div>
         </div>
         <div className="inner-container">
@@ -58,7 +50,7 @@ const CustomGates = () => {
             <img
               src={H3image}
               className="images-full"
-              alt="Custom Gates - Hero Image 3"
+              alt="Custom Gates -   3"
             />
           </div>
         </div>
@@ -76,7 +68,7 @@ const CustomGates = () => {
             <img
               src={H4image}
               className="images-full"
-              alt="Custom Gates - Hero Image 4"
+              alt="Custom Gates -   4"
             />
           </div>
         </div>

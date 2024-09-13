@@ -39,12 +39,12 @@ const ModernKitchenServices = () => {
             <img
               src={H1image}
               className="img-65"
-              alt="Modern Kitchen Services - Hero Image 1"
+              alt="Modern Kitchen Services -   1"
             />
             <img
               src={H2image}
               className="img-35"
-              alt="Modern Kitchen Services - Hero Image 2"
+              alt="Modern Kitchen Services -   2"
             />
           </div>
         </div>
@@ -66,12 +66,12 @@ const ModernKitchenServices = () => {
             <img
               src={H3image}
               className="img-35"
-              alt="Modern Kitchen Services - Hero Image 3"
+              alt="Modern Kitchen Services -   3"
             />
             <img
               src={H4image}
               className="img-65"
-              alt="Modern Kitchen Services - Hero Image 4"
+              alt="Modern Kitchen Services -   4"
             />
           </div>
         </div>
@@ -91,7 +91,7 @@ const ModernKitchenServices = () => {
             <img
               src={H5image}
               className="images-full"
-              alt="Modern Kitchen Services - Hero Image 5"
+              alt="Modern Kitchen Services -   5"
             />
           </div>
         </div>
