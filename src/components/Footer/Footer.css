@@ -5,7 +5,7 @@ footer {
 
 .footer-top {
     font-family: "Public Sans", sans-serif;
-    background: white;
+    background: url(../../Assets//images/test.png);
     padding: 120px 350px;
     display: flex;
     flex-direction: column;
