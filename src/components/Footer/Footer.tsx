@@ -4,24 +4,26 @@ import { Button } from "@chakra-ui/react";
 import { ReactComponent as BtnIcon } from "../../Assets/icons/buttonIcon.svg";
 import "./Footer.css"; // Add this to import the CSS file
 
-const Footer = () => {
+const Footer = ({ addTop = true }: { addTop?: boolean }) => {
   return (
     <footer>
-      <div className="footer-top">
-        <div className="footer-title">Let's Talk About Your Project</div>
-        <Button
-          style={{
-            backgroundColor: "#c4a24d",
-            color: "#fff",
-            border: "unset",
-            borderRadius: "1.8rem",
-            padding: "1.7rem 0.5rem 1.7rem 1.7rem",
-          }}
-          rightIcon={<BtnIcon />}
-        >
-          Schedule a Consultation
-        </Button>
-      </div>
+      {addTop && (
+        <div className="footer-top">
+          <div className="footer-title">Let's Talk About Your Project</div>
+          <Button
+            style={{
+              backgroundColor: "#c4a24d",
+              color: "#fff",
+              border: "unset",
+              borderRadius: "1.8rem",
+              padding: "1.7rem 0.5rem 1.7rem 1.7rem",
+            }}
+            rightIcon={<BtnIcon />}
+          >
+            Schedule a Consultation
+          </Button>
+        </div>
+      )}
 
       <div className="footer-main">
         <div className="footer-logo-container">

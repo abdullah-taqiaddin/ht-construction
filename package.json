@@ -12,6 +12,7 @@
     "@types/node": "^16.18.108",
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
+    "masonry-layout": "^4.2.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.2",
@@ -46,6 +47,7 @@
     ]
   },
   "devDependencies": {
+    "@types/masonry-layout": "^4.2.8",
     "eslint": "^8.57.0",
     "eslint-plugin-unused-imports": "^4.1.3"
   }

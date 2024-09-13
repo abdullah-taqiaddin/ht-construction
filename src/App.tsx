@@ -7,6 +7,7 @@ import CustomGates from "./Pages/CustomGates/CustomGates";
 import FireplaceServices from "./Pages/FireplaceServices/ClosetsCabinates";
 import ModernKitchenServices from "./Pages/ModernKitchen/ModernKitchen";
 import { GalleryPage } from "./Pages/Gallery/Gallery";
+import ContactForm from "./Pages/ContactUs/ContactForm";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             element={<ModernKitchenServices />}
           />{" "}
           <Route path="/gallerypage" element={<GalleryPage />} />
+          <Route path="/contanctus" element={<ContactForm />} />
         </Routes>
       </div>
     </Router>

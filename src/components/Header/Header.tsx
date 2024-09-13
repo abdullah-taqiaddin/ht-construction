@@ -12,14 +12,20 @@ import Icn from "../../Assets/icons/MainLogo 1.svg";
 import "./Header.css";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { Link } from "react-router-dom";
+
 const Header = () => {
   const { isOpen, onOpen, onClose } = useDisclosure(); // Chakra UI Drawer control
-  const [isDropdownOpen, setDropdownOpen] = useState(false); // Dropdown state for services
+  const [isDropdownOpen, setDropdownOpen] = useState(false); // Dropdown state for services in the main navigation
+  const [isDrawerDropdownOpen, setDrawerDropdownOpen] = useState(false); // Dropdown state for services in the drawer
   const dropdownRef = useRef<HTMLDivElement>(null); // Ref for dropdown to detect outside clicks
 
   const toggleDropdown = (e: React.MouseEvent) => {
     e.preventDefault(); // Prevent scrolling back to the top
     setDropdownOpen((prev) => !prev); // Toggle dropdown visibility
+  };
+
+  const toggleDrawerDropdown = () => {
+    setDrawerDropdownOpen((prev) => !prev); // Toggle dropdown visibility inside the drawer
   };
 
   // Close dropdown when clicking outside
@@ -60,24 +66,64 @@ const Header = () => {
               <nav>
                 <ul className="drawer-nav">
                   <li>
-                    <a href="https://happy-sky-0f5904b1e.5.azurestaticapps.net">
-                      Home
-                    </a>
+                    <Link to="/">Home</Link>
+                  </li>
+                  <li
+                    onClick={toggleDrawerDropdown}
+                    style={{ cursor: "pointer" }}
+                  >
+                    Services ↓
+                  </li>
+                  {isDrawerDropdownOpen && (
+                    <ul
+                      style={{
+                        listStyle: "none",
+                        paddingLeft: "1.5rem",
+                        marginTop: "0.5rem",
+                        display: "flex",
+                        flexDirection: "column",
+                        gap: "1rem",
+                      }}
+                    >
+                      <li>
+                        <Link
+                          to="/houserenovation"
+                          style={{ color: "#333", textDecoration: "none" }}
+                        >
+                          Full House Renovation
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          to="/closetscabinates"
+                          style={{ color: "#333", textDecoration: "none" }}
+                        >
+                          Cabinet Craft Solutions
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          to="/customgates"
+                          style={{ color: "#333", textDecoration: "none" }}
+                        >
+                          Custom Gate Creations
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          to="/fireplaceservices"
+                          style={{ color: "#333", textDecoration: "none" }}
+                        >
+                          Fireplace Master Services
+                        </Link>
+                      </li>
+                    </ul>
+                  )}
+                  <li>
+                    <Link to="/gallerypage">Gallery</Link>
                   </li>
                   <li>
-                    <a href="https://happy-sky-0f5904b1e.5.azurestaticapps.net">
-                      Services
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://happy-sky-0f5904b1e.5.azurestaticapps.net">
-                      Gallery
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://happy-sky-0f5904b1e.5.azurestaticapps.net">
-                      Contact Us
-                    </a>
+                    <Link to="/contanctus">Contact Us</Link>
                   </li>
                 </ul>
               </nav>
@@ -143,12 +189,12 @@ const Header = () => {
                         borderBottom: "1px solid grey",
                       }}
                     >
-                      <a
-                        href="https://happy-sky-0f5904b1e.5.azurestaticapps.net"
+                      <Link
+                        to="/closetscabinates"
                         style={{ color: "#333", textDecoration: "none" }}
                       >
                         Cabinet Craft Solutions
-                      </a>
+                      </Link>
                     </div>
                     <div
                       style={{
@@ -156,38 +202,34 @@ const Header = () => {
                         borderBottom: "1px solid grey",
                       }}
                     >
-                      <a
-                        href="https://happy-sky-0f5904b1e.5.azurestaticapps.net"
+                      <Link
+                        to="/customgates"
                         style={{ color: "#333", textDecoration: "none" }}
                       >
                         Custom Gate Creations
-                      </a>
+                      </Link>
                     </div>
                     <div
                       style={{
                         padding: "8px 0",
                       }}
                     >
-                      <a
-                        href="https://happy-sky-0f5904b1e.5.azurestaticapps.net"
+                      <Link
+                        to="/fireplaceservices"
                         style={{ color: "#333", textDecoration: "none" }}
                       >
                         Fireplace Master Services
-                      </a>
+                      </Link>
                     </div>
                   </ul>
                 </div>
               )}
             </li>
             <li>
-              <a href="https://happy-sky-0f5904b1e.5.azurestaticapps.net">
-                Gallery
-              </a>
+              <Link to="/gallerypage">Gallery</Link>
             </li>
             <li>
-              <a href="https://happy-sky-0f5904b1e.5.azurestaticapps.net">
-                Contact Us
-              </a>
+              <Link to="/contanctus">Contact Us</Link>
             </li>
           </ul>
         </nav>
