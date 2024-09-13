@@ -55,7 +55,7 @@ const HouseRenovation = () => {
             </div>
           </div>
           <div className="house-renovation-image">
-            <img src={H1image} alt="House Renovation - First Hero Image" />
+            <img src={H1image} alt="House Renovation - First Hero" />
           </div>
         </div>
         <div className="bottom-section">
@@ -86,7 +86,7 @@ const HouseRenovation = () => {
             <img
               src={H2image}
               className="images-full"
-              alt="House Renovation - Second Hero Image"
+              alt="House Renovation - Second Hero "
             />
           </div>
         </div>
@@ -114,7 +114,7 @@ const HouseRenovation = () => {
             <img
               src={H3image}
               className="images-full"
-              alt="House Renovation - Third Hero Image"
+              alt="House Renovation - Third Hero"
             />
           </div>
         </div>
