@@ -7,8 +7,6 @@ import Img6 from "../../Assets/images/Gallery/Kitchen/6.png";
 
 import Img7 from "../../Assets/images/Gallery/Kitchen/7.png";
 import Img8 from "../../Assets/images/Gallery/Kitchen/8.png";
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
 
 import "./KitchenGallery.css";
 
@@ -24,7 +22,8 @@ const KitchenGallery = () => {
               display: "flex",
               flexDirection: "column",
               gap: "20px",
-              height: "61.3rem",
+              width: "35%",
+              //height: "61.3rem",
             }}
           >
             <img src={Img1} alt="Kitchen 1" className="full" />
@@ -33,7 +32,7 @@ const KitchenGallery = () => {
           {/* Second Column */}
           <div className="column">
             {/* First row - 50/50 width */}
-            <div className="row">
+            <div className="row" style={{ gap: "5px" }}>
               <img
                 src={Img2}
                 alt="Kitchen 2"
@@ -49,7 +48,12 @@ const KitchenGallery = () => {
             </div>
             {/* Second row - Full width */}
             <div className="row">
-              <img src={Img4} alt="Kitchen 4" className="full" />
+              <img
+                src={Img4}
+                alt="Kitchen 4"
+                className="full"
+                style={{ height: "124%" }}
+              />
             </div>
           </div>
         </div>

@@ -7,7 +7,6 @@ import Img6 from "../../Assets/images/Gallery/CabinatesClostes/6.png";
 import Img7 from "../../Assets/images/Gallery/CabinatesClostes/7.png";
 import Img8 from "../../Assets/images/Gallery/CabinatesClostes/8.png";
 import Img9 from "../../Assets/images/Gallery/CabinatesClostes/9.png";
-import Img10 from "../../Assets/images/Gallery/CabinatesClostes/10.png";
 
 import Img11 from "../../Assets/images/Gallery/CabinatesClostes/11.png";
 
@@ -23,7 +22,6 @@ import "./CabinatesClostes.css";
 const CabinatesClostes = () => {
   return (
     <div>
-      <Header />
       <div className="gallery">
         {/* First Row */}
         <div className="row">
@@ -58,7 +56,7 @@ const CabinatesClostes = () => {
         </div>
 
         {/* Fourth Row */}
-        <div className="row">
+        {/* <div className="row">
           <div className="column">
             <img src={Img11} alt="Project 11" className="half" />
           </div>
@@ -81,10 +79,50 @@ const CabinatesClostes = () => {
               <img src={Img14} alt="Project 14" className="half" />
             </div>
           </div>
+        </div> */}
+        <div className="row">
+          {/* First Column - 100% height */}
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              gap: "20px",
+              width: "35%",
+              //height: "61.3rem",
+            }}
+          >
+            <img src={Img11} alt="Kitchen 1" className="full" />
+          </div>
+
+          {/* Second Column */}
+          <div className="column">
+            {/* First row - 50/50 width */}
+            <div className="row" style={{ gap: "5px" }}>
+              <img
+                src={Img13}
+                alt="Kitchen 2"
+                className="half"
+                style={{ width: "50%", height: "100%" }}
+              />
+              <img
+                src={Img12}
+                alt="Kitchen 3"
+                className="half"
+                style={{ width: "48%", height: "100%" }}
+              />
+            </div>
+            {/* Second row - Full width */}
+            <div className="row">
+              <img
+                src={Img14}
+                alt="Kitchen 4"
+                className="full"
+                style={{ height: "124%" }}
+              />
+            </div>
+          </div>
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 };

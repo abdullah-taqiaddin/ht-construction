@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import { Button } from "@chakra-ui/react"; // Use only the Button from Chakra UI
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import { ReactComponent as BathIcon } from "../../Assets/icons/sinks-icn.svg";
 import { ReactComponent as ClostIcon } from "../../Assets/icons/closes-icn.svg";
 import { ReactComponent as GateIcon } from "../../Assets/icons/gate-creation-icn.svg";
@@ -10,7 +9,8 @@ import { ReactComponent as KIcon } from "../../Assets/icons/Component 1/Type9.sv
 import { ReactComponent as StairsIcon } from "../../Assets/icons/stairs-icn.svg";
 import "./Gallery.css"; // Import the CSS file
 import BathroomGallery from "../../components/Bathorrom/Bathroom";
-import KitchenGallery from "../../components/Kitchen/Bathroom";
+import KitchenGallery from "../../components/Kitchen/KitchenGallery";
+import CabinatesClostes from "../../components/CabinatesClostes/CabinatesClostes";
 
 // Example gallery components
 
@@ -25,8 +25,8 @@ export const GalleryPage = () => {
         return <BathroomGallery />;
       case "KitchenGallery":
         return <KitchenGallery />;
-      // case "CabinetClosetsGallery":
-      //   return <CabinetCloset />;
+      case "CabinetClosetsGallery":
+        return <CabinatesClostes />;
       // case "DoorsGatesGallery":
       //   return <DoorsGatesGallery />;
       // case "RailsStairsGallery":

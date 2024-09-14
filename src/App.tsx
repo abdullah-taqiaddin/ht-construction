@@ -9,7 +9,7 @@ import ModernKitchenServices from "./Pages/ModernKitchen/ModernKitchen";
 import { GalleryPage } from "./Pages/Gallery/Gallery";
 import ContactForm from "./Pages/ContactUs/ContactForm";
 import BathroomGallery from "./components/Bathorrom/Bathroom";
-import KitchenGallery from "./components/Kitchen/Bathroom";
+import KitchenGallery from "./components/Kitchen/KitchenGallery";
 import CabinatesClostes from "./components/CabinatesClostes/CabinatesClostes";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
