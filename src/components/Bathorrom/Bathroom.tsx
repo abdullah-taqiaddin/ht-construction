@@ -8,8 +8,6 @@ import Img7 from "../../Assets/images/Gallery/Bathroom/7.png";
 import Img8 from "../../Assets/images/Gallery/Bathroom/8.png";
 import Img9 from "../../Assets/images/Gallery/Bathroom/9.png";
 import Img10 from "../../Assets/images/Gallery/Bathroom/10.png";
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
 
 import "./BathroomGallery.css";
 const BathroomGallery = () => {

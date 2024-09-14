@@ -15,8 +15,6 @@ import Img12 from "../../Assets/images/Gallery/CabinatesClostes/12.png";
 import Img13 from "../../Assets/images/Gallery/CabinatesClostes/13.png";
 import Img14 from "../../Assets/images/Gallery/CabinatesClostes/14.png";
 
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
 
 import "./CabinatesClostes.css";
 const CabinatesClostes = () => {
