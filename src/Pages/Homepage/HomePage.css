@@ -256,10 +256,10 @@
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
 
     .hero-title {
-        font-size: 50px;
+        font-size: 50px !important;
     }
 .project-title {
     font-size: 35px;
