@@ -53,35 +53,3 @@ img {
 .cta-button:hover {
     background-color: #ffb700;
 }
-
-@media (max-width: 600px) {
-    .gallery {
-        display: block;
-        overflow-y: scroll;
-        /* Make gallery scrollable */
-        height: 100vh;
-        /* Full viewport height */
-        padding: 10px;
-        /* Smaller padding for mobile */
-    }
-
-    .row,
-    .column {
-        display: block;
-        /* Stack images vertically */
-    }
-
-    img {
-        width: 100%;
-        height: auto;
-        /* Maintain aspect ratio */
-        margin-bottom: 20px;
-        /* Space between images */
-    }
-
-    .full,
-    .half {
-        height: auto;
-        /* Auto height to fit the screen */
-    }
-}

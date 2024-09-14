@@ -10,6 +10,7 @@ import { GalleryPage } from "./Pages/Gallery/Gallery";
 import ContactForm from "./Pages/ContactUs/ContactForm";
 import BathroomGallery from "./components/Bathorrom/Bathroom";
 import KitchenGallery from "./components/Kitchen/Bathroom";
+import CabinatesClostes from "./components/CabinatesClostes/CabinatesClostes";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/contanctus" element={<ContactForm />} />
           <Route path="/BathroomGallery" element={<BathroomGallery />} />
           <Route path="/KitchenGallery" element={<KitchenGallery />} />
+          <Route path="/CabinatesClostes" element={<CabinatesClostes />} />
         </Routes>
       </div>
     </Router>

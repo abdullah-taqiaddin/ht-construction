@@ -25,7 +25,7 @@ const KitchenGallery = () => {
               display: "flex",
               flexDirection: "column",
               gap: "20px",
-              height: "60%",
+              height: "61.3rem",
             }}
           >
             <img src={Img1} alt="Kitchen 1" className="full" />
