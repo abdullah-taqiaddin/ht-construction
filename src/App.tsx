@@ -8,6 +8,8 @@ import FireplaceServices from "./Pages/FireplaceServices/ClosetsCabinates";
 import ModernKitchenServices from "./Pages/ModernKitchen/ModernKitchen";
 import { GalleryPage } from "./Pages/Gallery/Gallery";
 import ContactForm from "./Pages/ContactUs/ContactForm";
+import BathroomGallery from "./components/Bathorrom/Bathroom";
+import KitchenGallery from "./components/Kitchen/Bathroom";
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
           />{" "}
           <Route path="/gallerypage" element={<GalleryPage />} />
           <Route path="/contanctus" element={<ContactForm />} />
+          <Route path="/BathroomGallery" element={<BathroomGallery />} />
+          <Route path="/KitchenGallery" element={<KitchenGallery />} />
         </Routes>
       </div>
     </Router>
