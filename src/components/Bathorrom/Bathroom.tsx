@@ -15,7 +15,6 @@ import "./BathroomGallery.css";
 const BathroomGallery = () => {
   return (
     <div>
-      <Header />
       <div className="gallery">
         {/* First Row */}
         <div className="row">
@@ -47,7 +46,6 @@ const BathroomGallery = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

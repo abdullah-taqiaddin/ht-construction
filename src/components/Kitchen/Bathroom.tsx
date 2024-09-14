@@ -15,7 +15,6 @@ import "./KitchenGallery.css";
 const KitchenGallery = () => {
   return (
     <div>
-      <Header />
       <div className="gallery">
         {/* First Row */}
         <div className="row">
@@ -74,7 +73,6 @@ const KitchenGallery = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

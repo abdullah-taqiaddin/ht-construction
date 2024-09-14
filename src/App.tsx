@@ -11,11 +11,23 @@ import ContactForm from "./Pages/ContactUs/ContactForm";
 import BathroomGallery from "./components/Bathorrom/Bathroom";
 import KitchenGallery from "./components/Kitchen/Bathroom";
 import CabinatesClostes from "./components/CabinatesClostes/CabinatesClostes";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top
+  }, [pathname]); // Whenever the route/pathname changes
+
+  return null;
+};
 function App() {
   return (
     <Router>
       <div className="App">
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/houserenovation" element={<HouseRenovation />} />

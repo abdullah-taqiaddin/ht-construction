@@ -19,11 +19,6 @@ const Header = () => {
   const [isDrawerDropdownOpen, setDrawerDropdownOpen] = useState(false); // Dropdown state for services in the drawer
   const dropdownRef = useRef<HTMLDivElement>(null); // Ref for dropdown to detect outside clicks
 
-  const toggleDropdown = (e: React.MouseEvent) => {
-    e.preventDefault(); // Prevent scrolling back to the top
-    setDropdownOpen((prev) => !prev); // Toggle dropdown visibility
-  };
-
   const toggleDrawerDropdown = () => {
     setDrawerDropdownOpen((prev) => !prev); // Toggle dropdown visibility inside the drawer
   };
@@ -53,13 +48,17 @@ const Header = () => {
   return (
     <>
       <header className="header">
-        <Drawer isOpen={isOpen} placement="left" onClose={onClose}>
+        <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
           <DrawerOverlay />
           <DrawerContent style={{ background: "white", zIndex: 10000 }}>
-            <DrawerCloseButton />
+            <DrawerCloseButton style={{ background: "#c4a24d" }} />
             <DrawerHeader>
               <div className="logo">
-                <img src={Icn} alt="HT Construction" />
+                <img
+                  src={Icn}
+                  alt="HT Construction"
+                  style={{ height: "unset" }}
+                />
               </div>
             </DrawerHeader>
             <DrawerBody>
@@ -153,8 +152,18 @@ const Header = () => {
                 Home
               </Link>
             </li>
-            <li onClick={toggleDropdown} style={{ position: "relative" }}>
-              <div>Services ↓</div>
+            <li
+              onMouseEnter={() => setDropdownOpen(true)}
+              onMouseLeave={() => setDropdownOpen(false)}
+              style={{ position: "relative" }}
+            >
+              <div>
+                Services
+                {/* Arrow that rotates */}
+                <span className={`arrow ${isDropdownOpen ? "rotate" : ""}`}>
+                  ↓
+                </span>
+              </div>
               {isDropdownOpen && (
                 <div
                   ref={dropdownRef} // Attach ref to dropdown
@@ -162,28 +171,25 @@ const Header = () => {
                     position: "absolute",
                     top: "100%",
                     left: 0,
+                    borderRadius: "20px",
                     backgroundColor: "#fff",
                     border: "1px solid #ccc",
                     boxShadow: "0 8px 16px rgba(0, 0, 0, 0.1)",
                     listStyle: "none",
-                    padding: "10px",
+                    padding: "3rem",
+                    paddingLeft: "2rem",
                     margin: 0,
                     zIndex: 1000,
                   }}
                 >
-                  <ul
+                  <div
                     style={{
                       display: "flex",
                       flexDirection: "column",
                       gap: "1rem",
                     }}
                   >
-                    <div
-                      style={{
-                        padding: "8px 0",
-                        borderBottom: "1px solid grey",
-                      }}
-                    >
+                    <div className="dropdown-item" style={{ width: "12rem" }}>
                       <Link
                         to="/houserenovation"
                         style={{ color: "#333", textDecoration: "none" }}
@@ -191,12 +197,7 @@ const Header = () => {
                         Full House Renovation
                       </Link>
                     </div>
-                    <div
-                      style={{
-                        padding: "8px 0",
-                        borderBottom: "1px solid grey",
-                      }}
-                    >
+                    <div className="dropdown-item">
                       <Link
                         to="/closetscabinates"
                         style={{ color: "#333", textDecoration: "none" }}
@@ -204,12 +205,7 @@ const Header = () => {
                         Cabinet Craft Solutions
                       </Link>
                     </div>
-                    <div
-                      style={{
-                        padding: "8px 0",
-                        borderBottom: "1px solid grey",
-                      }}
-                    >
+                    <div className="dropdown-item">
                       <Link
                         to="/customgates"
                         style={{ color: "#333", textDecoration: "none" }}
@@ -217,12 +213,7 @@ const Header = () => {
                         Custom Gate Creations
                       </Link>
                     </div>
-                    <div
-                      style={{
-                        padding: "8px 0",
-                        borderBottom: "1px solid grey",
-                      }}
-                    >
+                    <div className="dropdown-item">
                       <Link
                         to="/fireplaceservices"
                         style={{
@@ -233,11 +224,7 @@ const Header = () => {
                         Fireplace Master Services
                       </Link>
                     </div>
-                    <div
-                      style={{
-                        padding: "8px 0",
-                      }}
-                    >
+                    <div className="dropdown-item">
                       <Link
                         to="/modernkitchenservices"
                         style={{ color: "#333", textDecoration: "none" }}
@@ -245,7 +232,7 @@ const Header = () => {
                         Modern Kitchen Services
                       </Link>
                     </div>
-                  </ul>
+                  </div>
                 </div>
               )}
             </li>

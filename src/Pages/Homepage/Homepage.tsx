@@ -2,7 +2,7 @@
 import "./HomePage.css"; // Create a CSS file for HomePage layout
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
-import { Button } from "@chakra-ui/react";
+
 import { ReactComponent as BtnIcon } from "../../Assets/icons/buttonIcon.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -32,10 +32,11 @@ import dreamhouseimg from "../../Assets/images/Dreamhome.png";
 import { useRef } from "react";
 import type { Swiper as SwiperType } from "swiper";
 import ServiceRow from "../../components/ServiceCard/ServiceCard";
+import { Link } from "react-router-dom";
+import { Button } from "@chakra-ui/react";
 
 const Homepage = () => {
   const swiperRef = useRef<SwiperType | null>(null);
-
 
   return (
     <div className="homepage">
@@ -64,20 +65,22 @@ const Homepage = () => {
               interiors, create a cozy haven, or enhance your home's
               functionality, we've got you covered.
             </p>
-            <Button
-              style={{
-                backgroundColor: "#c4a24d",
-                color: "#fff",
-                border: "none",
-                borderRadius: "1.8rem",
-                padding: "1.7rem 0.5rem 1.7rem 1.7rem",
-                alignSelf: "start",
-              }}
-              className="sched-btn"
-              rightIcon={<BtnIcon />}
-            >
-              Schedule a Consultation
-            </Button>
+            <Link to="/contanctus">
+              <Button
+                style={{
+                  backgroundColor: "#c4a24d",
+                  color: "#fff",
+                  border: "none",
+                  borderRadius: "1.8rem",
+                  padding: "1.7rem 0.5rem 1.7rem 1.7rem",
+                  alignSelf: "start",
+                }}
+                className="sched-btn"
+                rightIcon={<BtnIcon />}
+              >
+                Schedule a Consultation
+              </Button>
+            </Link>
           </div>
 
           <div className="hero-image">
@@ -256,41 +259,49 @@ const Homepage = () => {
           }}
         >
           <ServiceRow
+            path="/houserenovation"
             title="Full House Renovation"
             description="Revitalize your entire living space with our Full House Renovation services. From modern updates to timeless transformations, we turn your vision into a revitalized reality. Elevate every corner of your home with precision and style."
             icn={HouseIcon}
           />
           <ServiceRow
+            path="/closetscabinates"
             title="Closets and Cabinets"
             description="From sleek storage solutions to bespoke designs, we tailor cabinets to enhance functionality and elevate aesthetics. Experience organization and style seamlessly integrated into every room."
             icn={ClostIcon}
           />
           <ServiceRow
+            path="/customgates"
             title="Custom Gate Creation"
             description="Our expertly crafted gates not only safeguard your property but also add a touch of elegance to your entrance."
             icn={GateIcon}
           />
           <ServiceRow
+            path="/fireplaceservices"
             title="Fireplace Master Services"
             description="From classic charm to contemporary focal points, we specialize in crafting fireplaces that redefine the heart of your living space."
             icn={FireplaceIcon}
           />
           <ServiceRow
+            path="/modernkitchenservices"
             title="Modern Kitchen Innovations Services"
             description="From modern flair to timeless elegance, we specialize in creating bespoke kitchens that harmonize functionality and style."
             icn={KIcon}
           />
           <ServiceRow
+            path="/"
             title="Stairs and Railings"
             description="From sleek storage solutions to bespoke designs, we tailor cabinets to enhance functionality and elevate aesthetics. Experience organization and style seamlessly integrated into every room."
             icn={StairsIcon}
           />
           <ServiceRow
+            path="/"
             title="Decks and Fences"
             description="We Provide premium outdoor solutions, dedicated to enhancing your property's aesthetics, functionality, and privacy."
             icn={DecksIcon}
           />
           <ServiceRow
+            path="/"
             title="Bathrooms"
             description="From contemporary spa-inspired designs to timeless classics, we offer comprehensive bathroom design services tailored to your unique preferences and lifestyle."
             icn={BathIcon}

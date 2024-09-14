@@ -86,3 +86,26 @@
     color: #333;
     font-size: 18px;
 }
+/* Arrow rotation animation */
+/* Arrow rotation animation */
+.arrow {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    margin-left: 5px;
+    /* Add some space between the text and arrow */
+}
+
+.arrow.rotate {
+    transform: rotate(180deg);
+}
+
+/* Dropdown hover effect */
+.dropdown-item {
+    transition: transform 0.3s ease;
+    /* Smooth transition */
+}
+
+.dropdown-item:hover {
+    transform: translateX(10px);
+    /* Move the item to the right by 10px */
+}

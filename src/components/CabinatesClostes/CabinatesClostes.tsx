@@ -83,10 +83,7 @@ const CabinatesClostes = () => {
           </div>
         </div>
       </div>
-      <div className="footer-cta">
-        <h2>Let's Talk About Your Project</h2>
-        <button className="cta-button">Schedule a Consultation</button>
-      </div>
+
       <Footer />
     </div>
   );
