@@ -117,6 +117,14 @@ const Header = () => {
                           Fireplace Master Services
                         </Link>
                       </li>
+                      <li>
+                        <Link
+                          to="/modernkitchenservices"
+                          style={{ color: "#333", textDecoration: "none" }}
+                        >
+                          Modern Kitchen Services
+                        </Link>
+                      </li>
                     </ul>
                   )}
                   <li>
@@ -212,13 +220,29 @@ const Header = () => {
                     <div
                       style={{
                         padding: "8px 0",
+                        borderBottom: "1px solid grey",
                       }}
                     >
                       <Link
                         to="/fireplaceservices"
-                        style={{ color: "#333", textDecoration: "none" }}
+                        style={{
+                          color: "#333",
+                          textDecoration: "none",
+                        }}
                       >
                         Fireplace Master Services
+                      </Link>
+                    </div>
+                    <div
+                      style={{
+                        padding: "8px 0",
+                      }}
+                    >
+                      <Link
+                        to="/modernkitchenservices"
+                        style={{ color: "#333", textDecoration: "none" }}
+                      >
+                        Modern Kitchen Services
                       </Link>
                     </div>
                   </ul>

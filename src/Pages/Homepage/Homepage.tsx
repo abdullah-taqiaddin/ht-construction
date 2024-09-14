@@ -71,7 +71,9 @@ const Homepage = () => {
                 border: "none",
                 borderRadius: "1.8rem",
                 padding: "1.7rem 0.5rem 1.7rem 1.7rem",
+                alignSelf: "start",
               }}
+              className="sched-btn"
               rightIcon={<BtnIcon />}
             >
               Schedule a Consultation

@@ -1,7 +1,7 @@
 .hero-section {
     /* background-image: url('/path-to-hero-image'); */
     display: flex;
-        align-items: center;
+    align-items: center;
         padding: 80px 0;
         background-color: #F6F7F9;
         gap: 40px;
@@ -85,21 +85,22 @@
         font-weight: 500;
         font-size: 35px;
     }
-        .text-overlay-description {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            gap: 40px;
-            text-align: left;
-        }
-    
-        .text-overlay-description div {
-            max-width: 400px;
-            font-size: 15px;
-            font-weight: 400;
-            color: rgba(246, 247, 249, 1);
-            line-height: 24px;
-        }
+
+.text-overlay-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 40px;
+    text-align: left;
+}
+
+.text-overlay-description div {
+    max-width: 400px;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(246, 247, 249, 1);
+    line-height: 24px;
+}
 
 
 .services-section {
@@ -127,6 +128,7 @@
     padding: 100px 20px;
     text-align: center;
 }
+
 .projects-section {
     margin: -80px;
     margin-Bottom: 0px;
@@ -154,6 +156,7 @@
     margin-bottom: 2rem;
 }
 
+.service-title {}
 .project-subtitle {
     color: #c4a24d;
     font-size: 22px;
@@ -177,6 +180,7 @@
     line-height: 1.8;
     color: #dedede;
 }
+
 .swiper-scrollbar {
     background-color: rgba(196, 162, 77, 0.3);
     /* Light background */
@@ -190,6 +194,15 @@
     border-radius: 10px;
     height: 100%;
     cursor: pointer;
+}
+.hero-section .sched-btn {
+    background-color: #c4a24d;
+    color: #fff;
+    border: none;
+    border-radius: 1.8rem;
+    padding: 1.7rem 0.5rem 1.7rem 1.7rem;
+    align-self: start;
+    font-size: 16px !important;
 }
 @media screen and (max-width: 950px) {
     .project-section-sub {
@@ -208,6 +221,13 @@
         width: 100%;
         margin-bottom: 2rem;
     }
+.hero-section .sched-btn {
+    font-size: 11px !important;
+}
+
+.hero-section .sched-btn span {
+    width: 21%;
+}
 }
 
 
@@ -226,6 +246,8 @@
     }
 
     .hero-text {
+        display: flex;
+            flex-direction: column;
         width: 100%;
     }
 
@@ -239,6 +261,13 @@
     .hero-title {
         font-size: 50px;
     }
+.project-title {
+    font-size: 35px;
+}
+
+.service-title {
+    font-size: 43px;
+}
 }
 
 @media screen and (max-width: 550px) {
@@ -251,5 +280,15 @@
 
     .text-overlay-description {
         display: none;
+    }
+.text-overlay-title {
+    font-size: 30px;
+}
+}
+
+@media screen and (max-width: 370px) {
+
+    .text-overlay-title {
+        font-size: 20px !important;
     }
 }

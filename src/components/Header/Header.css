@@ -12,7 +12,7 @@
     z-index: 10;
     backdrop-filter: blur(10px);
     justify-content: space-between
-    /* Adds a background blur */
+        /* Adds a background blur */
 }
 
 .logo {
@@ -50,19 +50,26 @@
 .hidden-div {
     width: 50px;
 }
+
 /* Show the hamburger icon and hide nav-links on smaller screens */
 @media (max-width: 752px) {
     .nav-links {
         display: none;
     }
+
                 .hidden-div {
                     display: none;
                 }
+
     .hamburger {
         display: block;
     }
 }
 
+.drawer-nav {
+
+    list-style-type: none;
+}
 .drawer-nav ul {
     list-style-type: none;
     padding: 0;
@@ -70,6 +77,8 @@
 
 .drawer-nav li {
     padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+        /* Adds a bottom border to each list item */
 }
 
 .drawer-nav li a {

@@ -52,6 +52,9 @@
     width: 100%;
 }
 
+.house-renovation {
+    font-size: 50px;
+}
 .bottom-section {
     padding: 100px 80px;
     display: flex;
@@ -109,8 +112,30 @@
 
 @media screen and (max-width: 600px) {
     .section-header {
-        font-size: 60px;
+        font-size: 40px;
+            font-weight: 500;
         line-height: unset;
     }
 
+        .inner-container {
+            padding: 92px 34px !important;
+        }
+    
+        .pages-header-title h1 {
+            font-size: 30px;
+        }
+    
+        .house-renovation-header {
+            font-size: 30px !important;
+            line-height: unset !important;
+    
+        }
+    
+        .house-renovation-section {
+            padding: 92px 34px !important;
+        }
+    
+        .bottom-section {
+            padding: 92px 34px !important;
+        }
 }

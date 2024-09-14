@@ -65,5 +65,6 @@
     .service-title {
         min-width: unset;
         max-width: unset;
+        font-size: 40px;
     }
 }
