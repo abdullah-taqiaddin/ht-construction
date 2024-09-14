@@ -44,3 +44,35 @@
     flex: 1;
     height: 70%;
 }
+@media (max-width: 600px) {
+    .gallery {
+        display: block;
+        overflow-y: scroll;
+        /* Make gallery scrollable */
+        height: 100vh;
+        /* Use full viewport height */
+        padding: 10px;
+        /* Smaller padding */
+    }
+
+    .row,
+    .column {
+        display: block;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+        /* Auto height to maintain aspect ratio */
+        margin-bottom: 20px;
+        /* Space between stacked images */
+    }
+
+    .full,
+    .half,
+    .thirty,
+    .seventy {
+        height: auto;
+        /* Auto height for all */
+    }
+}

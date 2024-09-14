@@ -40,3 +40,25 @@ img {
 .small {
     height: 100%;
 }
+@media (max-width: 600px) {
+    .gallery {
+        display: block;
+        overflow-y: scroll;
+        height: 100vh;
+        /* Make gallery height span the viewport */
+        padding: 10px;
+        /* Smaller padding for mobile */
+    }
+
+    .row,
+    .column {
+        display: block;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        /* Add space between images */
+    }
+}
