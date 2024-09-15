@@ -1,0 +1,65 @@
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* Space between rows */
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+    /* Space between columns */
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* Space between images in a column */
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+    /* Ensures images cover the container without stretching */
+}
+
+/* Full height image */
+.full {
+    height: 100%;
+}
+
+/* Half height or width image */
+.half {
+    height: 50%;
+}
+
+/* For the third column in the second row - 10% height */
+.small {
+    height: 100%;
+}
+
+@media (max-width: 600px) {
+    .gallery {
+        display: block;
+        overflow-y: scroll;
+        height: 100vh;
+        /* Make gallery height span the viewport */
+        padding: 10px;
+        /* Smaller padding for mobile */
+    }
+
+    .row,
+    .column {
+        display: block;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        /* Add space between images */
+    }
+}

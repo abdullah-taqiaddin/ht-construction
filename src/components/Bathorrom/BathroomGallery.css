@@ -46,18 +46,18 @@
 }
 @media (max-width: 600px) {
     .gallery {
-        display: block;
-        overflow-y: scroll;
+        display: block !important;
+            overflow-y: scroll !important;
         /* Make gallery scrollable */
-        height: 100vh;
+        height: 100vh !important;
         /* Use full viewport height */
-        padding: 10px;
+        padding: 10px !important;
         /* Smaller padding */
     }
 
     .row,
     .column {
-        display: block;
+        display: block !important;
     }
 
     .image {

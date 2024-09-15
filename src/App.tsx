@@ -9,10 +9,11 @@ import ModernKitchenServices from "./Pages/ModernKitchen/ModernKitchen";
 import { GalleryPage } from "./Pages/Gallery/Gallery";
 import ContactForm from "./Pages/ContactUs/ContactForm";
 import BathroomGallery from "./components/Bathorrom/Bathroom";
-import KitchenGallery from "./components/Kitchen/KitchenGallery";
+import KitchenGallery from "./components/KitchenGallery/KitchenGallery";
 import CabinatesClostes from "./components/CabinatesClostes/CabinatesClostes";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import DoorsGates from "./components/DoorsGates/DoorsGates";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -43,6 +44,7 @@ function App() {
           <Route path="/BathroomGallery" element={<BathroomGallery />} />
           <Route path="/KitchenGallery" element={<KitchenGallery />} />
           <Route path="/CabinatesClostes" element={<CabinatesClostes />} />
+          <Route path="/DoorsGates" element={<DoorsGates />} />
         </Routes>
       </div>
     </Router>

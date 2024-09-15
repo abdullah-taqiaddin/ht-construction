@@ -9,8 +9,9 @@ import { ReactComponent as KIcon } from "../../Assets/icons/Component 1/Type9.sv
 import { ReactComponent as StairsIcon } from "../../Assets/icons/stairs-icn.svg";
 import "./Gallery.css"; // Import the CSS file
 import BathroomGallery from "../../components/Bathorrom/Bathroom";
-import KitchenGallery from "../../components/Kitchen/KitchenGallery";
+import KitchenGallery from "../../components/DoorsGates/DoorsGates";
 import CabinatesClostes from "../../components/CabinatesClostes/CabinatesClostes";
+import DoorsGates from "../../components/DoorsGates/DoorsGates";
 
 // Example gallery components
 
@@ -27,8 +28,8 @@ export const GalleryPage = () => {
         return <KitchenGallery />;
       case "CabinetClosetsGallery":
         return <CabinatesClostes />;
-      // case "DoorsGatesGallery":
-      //   return <DoorsGatesGallery />;
+      case "DoorsGates":
+        return <DoorsGates />;
       // case "RailsStairsGallery":
       //   return <RailsStairsGallery />;
       default:
@@ -71,7 +72,7 @@ export const GalleryPage = () => {
           <Button
             leftIcon={<GateIcon />}
             className="gallery-button"
-            onClick={() => setSelectedGallery("DoorsGatesGallery")}
+            onClick={() => setSelectedGallery("DoorsGates")}
           >
             Doors & Gates
           </Button>

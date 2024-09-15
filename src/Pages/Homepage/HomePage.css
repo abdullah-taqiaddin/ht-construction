@@ -288,6 +288,9 @@
     .service-title {
         font-size: 33px;
     }
+        .hero-section .sched-btn {
+            margin-left: -10px;
+        }
 }
 @media screen and (max-width: 550px) {
 
