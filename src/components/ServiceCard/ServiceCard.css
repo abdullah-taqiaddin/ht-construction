@@ -37,9 +37,7 @@
     text-align: left;
 }
 
-.service-btn-icon {
-    
-}
+.service-btn-icon {}
 
 @media screen and (max-width: 1295px) {
     .service-row {
@@ -62,9 +60,24 @@
 }
 
 @media screen and (max-width: 590px) {
+    .service-description {
+            font-size: 16px;
+            font-weight: 400;
+            max-width: 500px;
+            text-align: left;
+        }
     .service-title {
         min-width: unset;
         max-width: unset;
         font-size: 40px;
     }
+}
+@media screen and (max-width: 370px) {
+    .service-title {
+        min-width: unset;
+        max-width: unset;
+        font-size: 28px;
+        line-height: unset;
+    }
+
 }
