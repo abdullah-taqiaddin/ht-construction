@@ -1,0 +1,78 @@
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* Spacing between rows */
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+    /* Spacing between columns */
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* Spacing between images in a column */
+}
+
+.image {
+    background-color: #ddd;
+    width: 100%;
+}
+
+.full {
+    flex: 1;
+    height: 100%;
+}
+
+.half {
+    flex: 1;
+    height: 50%;
+}
+
+.thirty {
+    flex: 1;
+    height: 30%;
+}
+
+.seventy {
+    flex: 1;
+    height: 70%;
+}
+@media (max-width: 600px) {
+    .gallery {
+        display: block !important;
+            overflow-y: scroll !important;
+        /* Make gallery scrollable */
+        height: 100vh !important;
+        /* Use full viewport height */
+        padding: 10px !important;
+        /* Smaller padding */
+    }
+
+    .row,
+    .column {
+        display: block !important;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+        /* Auto height to maintain aspect ratio */
+        margin-bottom: 20px;
+        /* Space between stacked images */
+    }
+
+    .full,
+    .half,
+    .thirty,
+    .seventy {
+        height: auto;
+        /* Auto height for all */
+    }
+}

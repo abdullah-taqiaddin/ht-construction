@@ -93,12 +93,12 @@ const DoorsGates = () => {
           <div className="row" style={{ gap: "5px", height: "300px" }}>
             <img
               src={Img9}
-              alt="Image 9"
+              alt="Gallery 9"
               style={{ width: "70%", height: "100%" }}
             />
             <img
               src={Img10}
-              alt="Image 10"
+              alt="Gallery 10"
               style={{ width: "30%", height: "100%" }}
             />
           </div>
@@ -107,12 +107,12 @@ const DoorsGates = () => {
           <div className="row" style={{ gap: "5px", height: "300px" }}>
             <img
               src={Img11}
-              alt="Image 11"
+              alt="Gallery 11"
               style={{ width: "30%", height: "100%" }}
             />
             <img
               src={Img12}
-              alt="Image 12"
+              alt="Gallery 12"
               style={{ width: "70%", height: "100%" }}
             />
           </div>

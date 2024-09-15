@@ -12,6 +12,7 @@ import BathroomGallery from "../../components/Bathorrom/Bathroom";
 import KitchenGallery from "../../components/DoorsGates/DoorsGates";
 import CabinatesClostes from "../../components/CabinatesClostes/CabinatesClostes";
 import DoorsGates from "../../components/DoorsGates/DoorsGates";
+import RailsStairs from "../../components/RailsStairs/RailsStairs";
 
 // Example gallery components
 
@@ -30,8 +31,8 @@ export const GalleryPage = () => {
         return <CabinatesClostes />;
       case "DoorsGates":
         return <DoorsGates />;
-      // case "RailsStairsGallery":
-      //   return <RailsStairsGallery />;
+      case "RailsStairs":
+        return <RailsStairs />;
       default:
         return null;
     }
@@ -79,7 +80,7 @@ export const GalleryPage = () => {
           <Button
             leftIcon={<StairsIcon />}
             className="gallery-button"
-            onClick={() => setSelectedGallery("RailsStairsGallery")}
+            onClick={() => setSelectedGallery("RailsStairs")}
           >
             Rails & Stairs
           </Button>
