@@ -270,6 +270,25 @@
 }
 }
 
+@media screen and (max-width: 370px) {
+
+    .hero-title {
+        font-size: 30px !important;
+    }
+
+    .project-title {
+        font-size: 25px;
+    }
+
+    .hero-description {
+        font-size: 13px !important;
+        line-height: unset;
+    }
+
+    .service-title {
+        font-size: 33px;
+    }
+}
 @media screen and (max-width: 550px) {
 
     .hero-image {

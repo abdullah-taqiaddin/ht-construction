@@ -16,7 +16,7 @@ const ServiceRow = ({
   return (
     <div className="service-row">
       <div className="service-icon">
-        <img src={icn} alt="Service Icon" />
+        <img src={icn} alt="Service Icon" style={{ marginBottom: "unset" }} />
       </div>
       <div className="service-title">{title}</div>
       <div className="service-description">{description}</div>
